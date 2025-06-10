@@ -1,4 +1,4 @@
-  const musicFolder = "music/";
+const musicFolder = "music/";
   const playlist = [
     "1.mp3",
     "2.mp3",
@@ -20,13 +20,16 @@
     });
   }
 
-  // Quando o usuário clicar no botão, o áudio começará a tocar
-  document.getElementById('playButton').addEventListener('click', function() {
+  // Função para iniciar a reprodução ao clicar no botão
+  function startPlayback() {
     player.src = musicFolder + playlist[currentTrack];
     player.play().catch(function(error) {
       console.log("Erro ao tentar reproduzir o áudio: ", error);
     });
 
-    // Inicia a sequência de músicas
+    // Registrar o evento 'ended' após iniciar o áudio
     player.addEventListener("ended", playNext);
-  });
+  }
+
+  // Quando o usuário clicar no botão, o áudio começará a tocar
+  document.getElementById('playButton').addEventListener('click', startPlayback);
