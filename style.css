@@ -672,7 +672,7 @@ section.active {
   border-left: solid 10px #8d1752
 }
 
-#playButton {
+.btn-estilizado {
   background-color: #d63384; /* Cor de fundo romântica */
   color: white;
   font-size: 1.2em;
@@ -685,17 +685,17 @@ section.active {
   font-family: 'Segoe UI', sans-serif;
 }
 
-#playButton:hover {
+.btn-estilizado:hover {
   background-color: #a91c65; /* Cor de fundo quando passar o mouse */
   transform: scale(1.1); /* Leve aumento de tamanho */
   box-shadow: 0 10px 30px rgba(214, 51, 132, 0.5); /* Efeito de sombra mais forte */
 }
 
-#playButton:active {
+.btn-estilizado:active {
   transform: scale(0.95); /* Leve redução de tamanho ao clicar */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave ao clicar */
 }
 
-#playButton:focus {
+.btn-estilizado:focus {
   outline: none; /* Remove a borda de foco padrão */
 }
