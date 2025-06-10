@@ -685,7 +685,7 @@ section.active {
   font-family: 'Segoe UI', sans-serif;
 }
 
-.btn-estilizado:hover {
+.btn-estilizado:hover button{
   background-color: #a91c65; /* Cor de fundo quando passar o mouse */
   transform: scale(1.1); /* Leve aumento de tamanho */
   box-shadow: 0 10px 30px rgba(214, 51, 132, 0.5); /* Efeito de sombra mais forte */
