@@ -672,7 +672,7 @@ section.active {
   border-left: solid 10px #8d1752
 }
 
-.btn-estilizado {
+.btn-estilizado button{
   background-color: #d63384; /* Cor de fundo romântica */
   color: white;
   font-size: 1.2em;
